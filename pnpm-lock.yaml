@@ -36,6 +36,12 @@ importers:
       next-auth:
         specifier: 5.0.0-beta.19
         version: 5.0.0-beta.19(next@15.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      nextjs:
+        specifier: ^0.0.3
+        version: 0.0.3
+      pnpm:
+        specifier: ^9.15.4
+        version: 9.15.4
       postcss:
         specifier: 8.4.38
         version: 8.4.38
@@ -743,6 +749,10 @@ packages:
       sass:
         optional: true
 
+  nextjs@0.0.3:
+    resolution: {integrity: sha512-mYbDUo4/sRAZ8TqK63PCpYnFiLg7BICG/ot9+guOrUKd4/Fo71ZmEQ41IZbH6nqbQvG7SXTBuofJXAIWfNho0w==}
+    engines: {node: '>=0.8.21'}
+
   node-addon-api@5.1.0:
     resolution: {integrity: sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA==}
 
@@ -833,6 +843,11 @@ packages:
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
+
+  pnpm@9.15.4:
+    resolution: {integrity: sha512-stwg4vxys+GISEWbNzWaMgZGY+VielHkx0ssKd2OjgSRSDw6u0B4nP1Xi/Ni+2uoJhsF8Dh9dnku1uI+o7G2oA==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1754,6 +1769,8 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
+  nextjs@0.0.3: {}
+
   node-addon-api@5.1.0: {}
 
   node-fetch@2.7.0:
@@ -1819,6 +1836,8 @@ snapshots:
   pify@2.3.0: {}
 
   pirates@4.0.6: {}
+
+  pnpm@9.15.4: {}
 
   postcss-import@15.1.0(postcss@8.4.38):
     dependencies:
