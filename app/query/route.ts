@@ -1,4 +1,5 @@
 import { db } from '@vercel/postgres';
+import { Customer } from '../lib/definitions';
 
 const client = await db.connect();
 
