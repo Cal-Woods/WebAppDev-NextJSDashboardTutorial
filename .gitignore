@@ -4,4 +4,3 @@ node_modules
 
 #Adding 'app/test', 'app/query' folders as these are for testing
 test
-query
