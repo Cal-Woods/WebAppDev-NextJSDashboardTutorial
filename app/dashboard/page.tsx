@@ -1,11 +1,19 @@
-import { testFetch } from "../lib/data";
+import { Card } from '@/app/ui/dashboard/cards';
+import RevenueChart from '@/app/ui/dashboard/revenue-chart';
+import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
+import { lusitana } from '@/app/ui/fonts';
+import { fetchRevenue } from '../lib/data';
+import { fetchCardData } from '../lib/data';
 
-export default function Page() {
-    return (
-        <div className="h-full">
-            <p className="text-center">Dashboard Page</p>
-            <button type="button" className="w-1/2 block bg-slate-300 m-auto mt-4 rounded-2xl">Click bitch!</button>
-        </div>
+export default async function Page() {
+  const revenue = await fetchRevenue();
 
-)
+  return (
+    <main>
+      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+        Dashboard
+      </h1>
+      <RevenueChart revenue={revenue}/>
+    </main>
+  );
 }
