@@ -15,15 +15,17 @@ export default async function Page() {
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>
-      <Card title='Number of customers' value={cardData.numberOfCustomers} type='customers'/>
-      <Card title='Number of invoices' value={cardData.numberOfInvoices} type='invoices'/>
-      <Card title='Total paid invoices' value={cardData.totalPaidInvoices} type='collected'/>
-      <Card title='Total pending invoices' value={cardData.totalPendingInvoices} type='pending'/>
+      <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+        <Card title='Number of customers' value={cardData.numberOfCustomers} type='customers'/>
+        <Card title='Number of invoices' value={cardData.numberOfInvoices} type='invoices'/>
+        <Card title='Total paid invoices' value={cardData.totalPaidInvoices} type='collected'/>
+        <Card title='Total pending invoices' value={cardData.totalPendingInvoices} type='pending'/>
+      </div>
 
-
-
-      <RevenueChart revenue={revenue}/>
-      <LatestInvoices latestInvoices={invoices}/>
+      <div className='mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8'>
+        <RevenueChart revenue={revenue}/>
+        <LatestInvoices latestInvoices={invoices}/>
+      </div>
     </main>
   );
 }
