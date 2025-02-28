@@ -1,7 +1,9 @@
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchLatestInvoices, fetchRevenue } from '../lib/data';
+import { fetchLatestInvoices, fetchRevenue, fetchCardData} from '../lib/data';
 import LatestInvoices from '../ui/dashboard/latest-invoices';
+import { Card} from '../ui/dashboard/cards';
+
 
 export default async function Page() {
   const revenue = await fetchRevenue();
