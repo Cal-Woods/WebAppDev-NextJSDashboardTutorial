@@ -8,6 +8,7 @@ import { Card} from '../ui/dashboard/cards';
 export default async function Page() {
   const revenue = await fetchRevenue();
   const invoices = await fetchLatestInvoices();
+  const cardData = await fetchCardData();
 
   return (
     <main>
